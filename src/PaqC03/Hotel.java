@@ -23,7 +23,7 @@ public class Hotel extends Cliente implements Serializable{
                 }
             }
         }
-        return null;
+        return null; //.
     }
 
 
