@@ -15,9 +15,16 @@ public class Hotel extends Cliente implements Serializable{
         this.hotel = hotel;
     }
 
-
-
-
+    public Cliente DevolverDni(Cliente dni) {
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 6; j++) {
+                if(hotel[i][j].equals(dni)) {
+                    return hotel[i][j];
+                }
+            }
+        }
+        return null;
+    }
 
     public int reservarHab(Cliente cl, String opc, int cantHab) {
         int fila = 0;
