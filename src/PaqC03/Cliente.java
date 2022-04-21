@@ -15,6 +15,10 @@ public class Cliente implements Serializable{
     public Cliente() {
     }
 
+    public Cliente(int DNI) {
+        this.DNI = DNI;
+    }
+
     public Cliente(String nombre, String apellidos, int DNI, int numTelef, int numTarjet, String fechaEntrada, String fechaSalida, String regAlimenticio) {
         this.nombre = nombre;
         this.apellidos = apellidos;
